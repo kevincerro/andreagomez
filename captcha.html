@@ -7,7 +7,13 @@
     </head>
     <body>
         <form action="?" method="POST">
-            <div class="g-recaptcha" data-sitekey="6Ld7Qw0cAAAAAEFUiNIg8s_AoBR7_xIoyxsA5ca_"></div>
+            <div class="g-recaptcha" data-sitekey="6Ld7Qw0cAAAAAEFUiNIg8s_AoBR7_xIoyxsA5ca_" data-callback="callback"></div>
         </form>
+
+        <script type="text/javascript">
+            function callback(token){
+                alert(token);
+            }
+        </script>
     </body>
 </html>
